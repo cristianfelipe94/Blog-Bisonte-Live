@@ -2,22 +2,23 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #FCFCFC;
+  background-color: #18191a;
   font-family: 'IBM Plex Serif', serif;
   line-height: 30px;
   overflow-x: hidden; }
 
 .ui-developers-position {
   width: 100vw;
-  height: 10vh;
-  background-color: #FFD166;
+  height: 8vh;
+  background-color: #2b2c2d;
   position: fixed;
+  box-shadow: inset 0px 0px 35px #00000042;
   top: 0;
-  z-index: 1;
-  color: #26547C; }
+  z-index: 1; }
 
 .ui-intro-color {
-  background-color: #EF476F;
+  background-color: #2b2c2d;
+  border-top: 1px solid #edd774;
   position: absolute;
   width: 100%;
   z-index: -2;
@@ -27,7 +28,7 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 0;
-  height: 10vh;
+  height: 8vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -39,13 +40,15 @@ body {
   position: relative;
   width: 10%;
   transition: 1s;
-  padding: 2% 5%; }
+  padding: 2% 5%;
+  border-top: 0px solid #2b2c2d;
+  border-bottom: 1px solid #edd774; }
   .ui-name-item:hover {
-    background-color: #71A9B5;
-    box-shadow: inset 0px 0px 5px white;
+    border-top: 3px solid #edd774;
     transition: 0.8s; }
 
 .ui-name-item a {
+  color: #edd774;
   text-decoration: none;
   position: absolute; }
 
@@ -62,8 +65,11 @@ body {
 .ui-herobanner-position {
   position: fixed;
   z-index: -5;
-  top: 0;
-  width: 100%; }
+  top: 10vh;
+  max-width: 700px;
+  left: 0;
+  margin: 0 auto;
+  right: 0; }
 
 .ui-stories-item {
   background-color: white;
@@ -104,9 +110,9 @@ body {
 
 .ui-breakline-color {
   display: block;
-  background-color: #5296A5;
-  height: 2px;
-  margin: 20%; }
+  height: 5px;
+  margin: 20%;
+  background-image: linear-gradient(to right, #f1e199, #776a2b); }
 
 .post-img-size {
   margin: 2% auto;
@@ -115,12 +121,14 @@ body {
 .ui-aboutproj-size {
   width: 40%;
   float: right;
-  margin: 0 5%; }
+  margin: 0 5%;
+  color: #edd774; }
 
 .ui-aboutdevs-size {
   width: 40%;
   margin: 0 5%;
-  float: left; }
+  float: left;
+  color: #edd774; }
 
 .ui-stories-size::before {
   content: "";
@@ -136,24 +144,26 @@ body {
   list-style: none;
   margin: 2%;
   border-bottom: 2px solid white;
-  padding: 1%; }
-  .ui-listdevs-display li:hover {
-    background-color: rgba(190, 68, 99, 0.76); }
+  padding: 1%;
+  transition: 1s; }
 
 .ui-listdevs-hidden {
   height: 0px;
   overflow: hidden; }
 
 .ui-button-size {
-  height: 50px;
+  height: 30px;
   width: 50%;
   display: block;
   margin: 0 auto;
   padding: 0;
-  background-color: #26547C;
-  box-shadow: inset 0px 0px 5px white;
+  background-color: #edd774;
   border: none;
-  color: white;
-  border-radius: 5px; }
+  color: #2b2c2d;
+  border-radius: 5px;
+  transition: 1s; }
+  .ui-button-size:hover {
+    background-color: #be9a4c;
+    transition: 0.8s; }
 
 /*# sourceMappingURL=style.css.map */
